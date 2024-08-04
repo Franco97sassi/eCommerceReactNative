@@ -186,7 +186,7 @@
 //     textAlign: "center",
 //   },
 // });
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { useContext, useState } from "react";
  import Header from "../components/Header";
 import { fonts } from "../utils/fonts";
@@ -222,6 +222,7 @@ const ProductDetailsScreen = () => {
   };
   return (
     <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+      <ScrollView> 
       <View style={styles.header}>
         <Header />
       </View>
@@ -322,7 +323,7 @@ const ProductDetailsScreen = () => {
           </TouchableOpacity>
         </View>
       </View>
-    </LinearGradient>
+      </ScrollView></LinearGradient>
   );
 };
 
